@@ -39,7 +39,7 @@
             android:dividerHeight="0dp"
             android:scrollbars="none" />
 
-        <FrameLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -48,7 +48,6 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/detail_header_height"
-                android:background="?attr/defaultFooterColor"
                 android:elevation="@dimen/toolbar_elevation"
                 android:orientation="horizontal"
                 tools:ignore="UnusedAttribute">
@@ -192,12 +191,7 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
-
-        </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
             android:id="@+id/image"
@@ -208,13 +202,6 @@
             android:src="@drawable/default_album_art"
             android:transitionName="@string/transition_album_art"
             tools:ignore="ContentDescription,UnusedAttribute" />
-
-        <View
-            android:id="@+id/header_overlay"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/detail_header_height"
-            android:elevation="@dimen/toolbar_elevation"
-            tools:ignore="UnusedAttribute" />
     </FrameLayout>
 
 </LinearLayout>

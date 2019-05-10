@@ -82,8 +82,6 @@ public class AlbumDetailActivity extends AbsSlidingMusicPanelActivity implements
     Toolbar toolbar;
     @BindView(R.id.header)
     View headerView;
-    @BindView(R.id.header_overlay)
-    View headerOverlay;
 
     @BindView(R.id.artist_icon)
     ImageView artistIconImageView;
@@ -138,13 +136,9 @@ public class AlbumDetailActivity extends AbsSlidingMusicPanelActivity implements
         public void onScrollChanged(int scrollY, boolean b, boolean b2) {
             scrollY += headerViewHeight;
 
-            // Change alpha of overlay
-            float headerAlpha = Math.max(0, Math.min(1, (float) 2 * scrollY / headerViewHeight));
-            headerOverlay.setBackgroundColor(ColorUtil.withAlpha(toolbarColor, headerAlpha));
 
             // Translate name text
             headerView.setTranslationY(Math.max(-scrollY, -headerViewHeight));
-            headerOverlay.setTranslationY(Math.max(-scrollY, -headerViewHeight));
             albumArtImageView.setTranslationY(Math.max(-scrollY, -headerViewHeight));
         }
     };
@@ -197,7 +191,9 @@ public class AlbumDetailActivity extends AbsSlidingMusicPanelActivity implements
         durationTextView.setTextColor(secondaryTextColor);
         songCountTextView.setTextColor(secondaryTextColor);
         albumYearTextView.setTextColor(secondaryTextColor);
+
     }
+
 
     @Override
     public int getPaletteColor() {
