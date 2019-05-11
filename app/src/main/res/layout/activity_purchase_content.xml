@@ -47,14 +47,14 @@
                     android:gravity="center_vertical"
                     android:paddingBottom="16dp"
                     android:paddingTop="24dp"
-                    android:text="Phonograph Pro"
+                    android:text="@string/phonograph_pro"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="Unlocks extra features, such as the folder view, all theme colors, a black theme and the sleep timer.\n\nThe source code of Phonograph is available on GitHub. You are welcome to compile the pro version yourself for free. However, if you want to support the development and receive updates through the Play Store, consider purchasing Phonograph Pro.\nThank you,\nKarim"
+                    android:text="@string/pro_description"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
             </LinearLayout>
 

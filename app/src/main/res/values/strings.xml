@@ -308,4 +308,6 @@
     <string name="sort_order_album">Album</string>
     <string name="sort_order_year">Year</string>
     <string name="finish_current_music_sleep_timer">Finish last song</string>
+    <string name="phonograph_pro">Phonograph Pro</string>
+    <string name="pro_description">Unlocks extra features, such as the folder view, all theme colors, a black theme and the sleep timer.  The source code of Phonograph is available on GitHub. You are welcome to compile the pro version yourself for free. However, if you want to support the development and receive updates through the Play Store, consider purchasing Phonograph Pro. Thank you, Karim</string>
 </resources>

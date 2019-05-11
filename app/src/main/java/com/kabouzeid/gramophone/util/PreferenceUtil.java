@@ -133,7 +133,7 @@ public final class PreferenceUtil {
     public void setGeneralTheme(String theme) {
         final SharedPreferences.Editor editor = mPreferences.edit();
         editor.putString(GENERAL_THEME, theme);
-        editor.commit();
+        editor.apply();
     }
 
     @StyleRes
@@ -185,7 +185,7 @@ public final class PreferenceUtil {
     public void setNowPlayingScreen(NowPlayingScreen nowPlayingScreen) {
         final SharedPreferences.Editor editor = mPreferences.edit();
         editor.putInt(NOW_PLAYING_SCREEN_ID, nowPlayingScreen.id);
-        editor.commit();
+        editor.apply();
     }
 
     public final boolean coloredNotification() {
